@@ -1,4 +1,4 @@
-package com.example.systolic
+package com.mchlsbl.systolic
 
 import io.flutter.embedding.android.FlutterActivity
 
