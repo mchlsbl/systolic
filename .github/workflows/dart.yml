@@ -25,10 +25,10 @@ jobs:
       - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
 
       - name: Install dependencies
-        run: flutter pub get
+        run: dart pub get
   
       - name: Build release APK
-        run: flutter build apk --release
+        run: dart build apk
   
       - name: Move APK to release folder
         run: mv build/app/outputs/flutter-apk/app-release.apk $GITHUB_WORKSPACE/release/
