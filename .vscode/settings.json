@@ -27,6 +27,9 @@
   "dart.lineLength": 120,
   "files.exclude": {
     ".dart_tool": true,
-    "build": true
+    "build": true,
+    ".flutter-plugins": true,
+    ".flutter-plugins-dependencies": true,
+    "pubspec.lock": true
   }
 }
