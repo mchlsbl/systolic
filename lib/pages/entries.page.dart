@@ -72,8 +72,7 @@ class _EntriesPageState extends State<EntriesPage> {
                 FilteringTextInputFormatter.digitsOnly,
                 LengthLimitingTextInputFormatter(3),
               ],
-              decoration: InputDecoration(
-                  hintText: AppLocalizations.of(context)!.systole),
+              decoration: InputDecoration(hintText: AppLocalizations.of(context)!.systole),
             ),
             TextField(
               controller: diastoleController,
@@ -83,8 +82,7 @@ class _EntriesPageState extends State<EntriesPage> {
                 FilteringTextInputFormatter.digitsOnly,
                 LengthLimitingTextInputFormatter(3),
               ],
-              decoration: InputDecoration(
-                  hintText: AppLocalizations.of(context)!.diastole),
+              decoration: InputDecoration(hintText: AppLocalizations.of(context)!.diastole),
             ),
             TextField(
               controller: pulseController,
@@ -94,8 +92,7 @@ class _EntriesPageState extends State<EntriesPage> {
                 FilteringTextInputFormatter.digitsOnly,
                 LengthLimitingTextInputFormatter(3),
               ],
-              decoration: InputDecoration(
-                  hintText: AppLocalizations.of(context)!.pulse),
+              decoration: InputDecoration(hintText: AppLocalizations.of(context)!.pulse),
             ),
           ],
         ),
@@ -145,10 +142,9 @@ class _EntriesPageState extends State<EntriesPage> {
     Map<String, List<Entry>> groupedEntries = {};
 
     entries.sort((a, b) => b.time.compareTo(a.time));
-
     for (var entry in entries) {
-      String dayKey = DateFormat(AppLocalizations.of(context)!.dateFormat)
-          .format(DateTime.fromMillisecondsSinceEpoch(entry.time));
+      String dayKey =
+          DateFormat(AppLocalizations.of(context)!.dateFormat).format(DateTime.fromMillisecondsSinceEpoch(entry.time));
 
       if (groupedEntries.containsKey(dayKey)) {
         groupedEntries[dayKey]!.add(entry);
@@ -199,8 +195,7 @@ class _EntriesPageState extends State<EntriesPage> {
                 itemBuilder: (context, index) {
                   final List<String> keys = groupedEntries.keys.toList();
                   final String dayKey = keys[index];
-                  final List<Entry> entries =
-                      sortEntriesByTime(groupedEntries[dayKey]!);
+                  final List<Entry> entries = sortEntriesByTime(groupedEntries[dayKey]!);
 
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

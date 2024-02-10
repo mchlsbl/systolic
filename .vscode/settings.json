@@ -1,0 +1,32 @@
+{
+  "breadcrumbs.enabled": true,
+  "debug.internalConsoleOptions": "openOnSessionStart",
+  "debug.openDebug": "openOnSessionStart",
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.suggestSelection": "first",
+  "editor.renderLineHighlight": "all",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.dragAndDrop": false,
+  "editor.showFoldingControls": "always",
+  "editor.tabSize": 2,
+  "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.copyOnSelection": true,
+  "window.zoomLevel": 0,
+  "explorer.incrementalNaming": "smart",
+  "dart.lineLength": 120,
+  "files.exclude": {
+    ".dart_tool": true,
+    "build": true
+  }
+}

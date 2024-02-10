@@ -12,11 +12,7 @@ class EntryTile extends StatelessWidget {
   final void Function()? onEditTap;
   final void Function()? onDeleteTap;
 
-  const EntryTile(
-      {super.key,
-      required this.entry,
-      required this.onEditTap,
-      required this.onDeleteTap});
+  const EntryTile({super.key, required this.entry, required this.onEditTap, required this.onDeleteTap});
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +32,7 @@ class EntryTile extends StatelessWidget {
           ),
         ),
         subtitle: Text(
-          DateFormat(AppLocalizations.of(context)!.timeFormat)
-              .format(DateTime.fromMillisecondsSinceEpoch(entry.time)),
+          DateFormat(AppLocalizations.of(context)!.timeFormat).format(DateTime.fromMillisecondsSinceEpoch(entry.time)),
           style: const TextStyle(
             fontSize: 17,
           ),
