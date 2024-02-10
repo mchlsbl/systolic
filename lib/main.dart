@@ -5,8 +5,8 @@ import 'package:system_theme/system_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-import 'package:systolic/models/entry/entry_database.dart';
-import 'package:systolic/pages/entries_page.dart';
+import 'package:systolic/models/entry/entry.database.dart';
+import 'package:systolic/pages/entries.page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,13 +17,13 @@ Future<void> main() async {
   runApp(
     ChangeNotifierProvider(
       create: (context) => EntryDatabase(),
-      child: const MyApp(),
+      child: const SystolicApp(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class SystolicApp extends StatelessWidget {
+  const SystolicApp({super.key});
 
   @override
   Widget build(BuildContext context) {

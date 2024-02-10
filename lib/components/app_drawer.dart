@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:systolic/components/app_drawer_tile.dart';
-import 'package:systolic/pages/entries_page.dart';
-import 'package:systolic/pages/overview_page.dart';
-import 'package:systolic/pages/medication_page.dart';
-import 'package:systolic/pages/options_page.dart';
+import 'package:systolic/pages/entries.page.dart';
+import 'package:systolic/pages/overview.page.dart';
+import 'package:systolic/pages/medication.page.dart';
+import 'package:systolic/pages/options.page.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});

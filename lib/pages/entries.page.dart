@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:systolic/models/entry/entry.dart';
-import 'package:systolic/models/entry/entry_database.dart';
+import 'package:systolic/models/entry/entry.database.dart';
 import 'package:systolic/components/entry_tile.dart';
 import 'package:systolic/components/page_template.dart';
 
